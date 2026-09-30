@@ -1,0 +1,12 @@
+GameInfo {
+    AddEventHandlers = "DukesNukesSpawnHandler"
+}
+
+DoomEdNums {
+    23567 = UZDevastator
+    23568 = UZLaserTripBombP
+    23569 = UZLaserTripBombPickup
+    23570 = UZPipeBombP
+    26571 = UZPipeBombPickup
+    26572 = UZRipper
+}

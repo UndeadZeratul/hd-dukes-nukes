@@ -1,0 +1,112 @@
+[en default]
+
+TAG_HOLODUPE                   = "Holo-Dupe";
+TAG_HOLODUPE_CONTROLLER        = "Holo-Dupe Controller";
+TAG_HOLODUPE_HOLOGRAM          = "Hologram";
+TAG_LASER_TRIPBOMB             = "Laser Trip-Bomb";
+TAG_PIPEBOMB                   = "Pipe Bomb";
+TAG_PIPEBOMB_DETONATOR         = "Detonator";
+TAG_RIPPER                     = "Ripper Chaingun";
+
+PICKUP_HOLODUPE                = "Picked up a Holo-Dupe!";
+PICKUP_LASER_TRIPBOMB          = "Picked up a laser trip-bomb!";
+PICKUP_PIPEBOMB                = "Picked up a pipe bomb!  So cool!";
+PICKUP_PIPEBOMB_DEACTIVATE     = "Picked up (and deactivated) a pipe bomb!";
+PICKUP_PIPEBOMB_DETONATOR      = "Picked up a detonator.";
+PICKUP_RIPPER                  = "You got the Ripper Chaingun!  Make those demon bastards pay!";
+
+OB_LASER_TRIPBOMB              = "%o got tripped up.";
+OB_PIPEBOMB                    = "%o should have read the warning label.";
+
+// Options Menu Titles
+DUKESNUKES_MENU                = "\c[Yellow]☢\c- Duke's Nukes";
+MENU_MACHINEGUNS_TITLE         = "--- Machine Guns ---";
+MENU_EXPLOSIVES_TITLE          = "--- Explosives ---";
+MENU_RESETOPTIONS_TITLE        = "--- Reset Options ---";
+
+// Menu Section Headers
+MENU_SPAWNOPTIONS              = "Spawn Options";
+MENU_WEPSPAWNOPTIONS           = "Weapon Spawn Options";
+MENU_MAGSPAWNOPTIONS           = "Magazine Spawn Options";
+MENU_PERSISTENCYOPTIONS        = "Spawn Persistence Options";
+MENU_RESETOPTIONS              = "Reset Options";
+MENU_RESETALLOPTIONS           = "Reset all Options";
+
+// Menu Static Text
+MENU_SPAWNRATE_TEXT1           = "Setting 'spawn rate' to Replace All will suppress";
+MENU_SPAWNRATE_TEXT2           = "spawns of that given type.";
+MENU_PERSISTENCY_TEXT          = "Control whether replacements happen after a mapload:";
+
+// Menu Option Labels
+MENU_NOTICE                    = "Notice:";
+MENU_BACKPACKSALLOWED          = "Allowed in Ammo Boxes and/or Backpacks: ";
+MENU_WALLTRAPS                 = "Spawn live Laser Tripbombs: ";
+MENU_SPAWNRATE                 = "Spawn Rate: ";
+MENU_WEPSPAWNRATE              = "Weapon Spawn Rate: ";
+MENU_MAGSPAWNRATE              = "Magazine Spawn Rate: ";
+MENU_PERSISTENCY               = "Persistent Spawns: ";
+MENU_WEPPERSISTENCY            = "Persistent Weapon Spawns: ";
+MENU_MAGPERSISTENCY            = "Persistent Magazine Spawns: ";
+
+// Menu Option Values
+MENU_ENABLED                   = "Enabled";
+MENU_DISABLED                  = "Disabled";
+MENU_REPLACEALL                = "Replace All";
+MENU_WITHALL                   = "With All";
+
+// Menu Command Text
+MENU_RESETWEP                  = "Reset Weapon Options";
+MENU_RESETMAG                  = "Reset Magazine Options";
+MENU_RESETPERSISTENCY          = "Reset Persistence Options";
+DUKESNUKES_RESETALLOPTIONS     = "Reset all options for Duke's Nukes";
+
+// Holo-Dupe Options Text
+MENU_HOLODUPE_SPAWNTEXT        = "Control the spawn rate of Pipe Bombs on Frag Grenades:";
+MENU_HOLODUPE_BACKPACKS        = "Control whether Pipe Bombs spawn in Backpacks:";
+
+// Pipe Bombs Options Text
+MENU_PIPEBOMB_SPAWNTEXT        = "Control the spawn rate of Pipe Bombs on Frag Grenades:";
+MENU_PIPEBOMB_BACKPACKS        = "Control whether Pipe Bombs spawn in Backpacks:";
+
+// Help Text
+BHGWH_FIRE                     = "Charge Singularity";
+BHGWH_RELOAD                   = "Reload Batteries";
+
+HOLODUPEWH_FIRE                = "  Deploy Holo-Dupe\n";
+HOLODUPEWH_RELOAD              = "  Insert Micro-Cell\n";
+HOLODUPEWH_UNLOAD              = "  Remove Micro-Cell\n";
+
+
+// Holo-Dupe Status
+HOLODUPE_DAMAGED               = "Malfunction Detected!";
+HOLODUPE_INOPERABLE            = "Operational Fault!";
+
+
+// Laser Tripbomb Log
+LASERTRIPBOMBLOG1              = "Look for wall to place the Laser Trip-Bomb on.";
+LASERTRIPBOMBLOG2              = "Can't plant here.";
+LASERTRIPBOMBLOG3              = "Laser Trip-Bomb planted.";
+LASERTRIPBOMBLOG4              = "\cj  Pick it up to defuse. \cd";
+
+
+// Merchant Store Filters
+
+MERCH_CAT_LASERTRIPBOMB        = "Duke's Nukes";
+MERCH_TAG_LASERTRIPBOMB        = "Laser Trip-bomb";
+MERCH_FLAVOR_LASERTRIPBOMB     = "The arming code is the same as my luggage.";
+
+MERCH_CAT_PIPEBOMB             = "Duke's Nukes";
+MERCH_TAG_PIPEBOMB             = "Pipebomb";
+MERCH_FLAVOR_PIPEBOMB          = "So Cool!  NOTE: Detonator not included.";
+
+MERCH_CAT_PIPEBOMBDETONATOR    = "Duke's Nukes";
+MERCH_TAG_PIPEBOMBDETONATOR    = "Pipe Bomb Detonator";
+MERCH_FLAVOR_PIPEBOMBDETONATOR = "Make sure to disarm the ones on you first.";
+
+MERCH_CAT_RIPPER               = "Duke's Nukes";
+MERCH_TAG_RIPPER               = "Ripper Chaingun";
+MERCH_FLAVOR_RIPPER            = "Make those demon bastards pay.";
+
+MERCH_CAT_HOLODUPE             = "Duke's Nukes";
+MERCH_TAG_HOLODUPE             = "Holo-Dupe";
+MERCH_FLAVOR_HOLODUPE          = "Now you get to kick back and chew bubblegum!";

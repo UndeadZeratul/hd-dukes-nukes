@@ -1,0 +1,162 @@
+OptionMenu "DukesNukesMenu" {
+
+	Title "$DUKESNUKES_MENU"
+
+	Option "$MENU_WALLTRAPS", "uz_walltrap_spawners", "OnOff"
+	StaticText ""
+	StaticText ""
+
+	StaticText "$MENU_MACHINEGUNS_TITLE", "Green"
+	StaticText ""
+	Submenu "$TAG_RIPPER", "ripperSpawning", 0, 1
+	StaticText ""
+
+	StaticText "$MENU_EXPLOSIVES_TITLE", "Brown"
+	StaticText ""
+	Submenu "$TAG_LASER_TRIPBOMB", "laserTripbombSpawning", 0, 1
+	StaticText ""
+	Submenu "$TAG_PIPEBOMB", "pipebombSpawning", 0, 1
+	StaticText ""
+
+	StaticText "$MENU_ITEMS_TITLE", "Red"
+	StaticText ""
+	Submenu "$TAG_HOLODUPE", "holoDupeSpawning", 0, 1
+	StaticText ""
+
+	StaticText "$MENU_RESETOPTIONS_TITLE", "Red"
+	StaticText ""
+	SafeCommand "$DUKESNUKES_RESETALLOPTIONS", "DukesNukes_Reset_Cvars"
+}
+
+AddOptionMenu "OptionsMenu" {
+	Submenu "$DUKESNUKES_MENU", "DukesNukesMenu"
+}
+
+AddOptionMenu "HDAddonMenu" {
+	Submenu "$DUKESNUKES_MENU", "DukesNukesMenu"
+}
+
+
+// Machine Guns
+
+OptionMenu "ripperSpawning" {
+	Title "$TAG_PIPEBOMB"
+
+	StaticText "$MENU_NOTICE", "Green"
+	StaticText "$MENU_SPAWNRATE_TEXT1", "White"
+	StaticText "$MENU_SPAWNRATE_TEXT2", "White"
+	StaticText ""
+
+	StaticText "$MENU_SPAWNOPTIONS", "Green"
+	StaticText "$MENU_PIPEBOMB_SPAWNTEXT", "White"
+	Slider "$MENU_WEPSPAWNRATE", "pipebomb_spawn_bias", 0.0, 100, .01, 2
+	SafeCommand "$MENU_RESETWEP", "resetcvar pipebomb_spawn_bias"
+	StaticText ""
+
+	StaticText "$MENU_PIPEBOMB_BACKPACKS", "White"
+	Option "$MENU_BACKPACKSALLOWED", "pipebomb_allowBackpacks", "OnOff"
+	StaticText ""
+
+	StaticText "$MENU_PERSISTENCYOPTIONS", "Green"
+	StaticText "$MENU_PERSISTENCY_TEXT", "White"
+	Option "$MENU_PERSISTENCY", "pipebomb_persistent_spawning", "OnOff"
+	SafeCommand "$MENU_RESETPERSISTENCY", "resetcvar pipebomb_persistent_spawning"
+	StaticText ""
+	StaticText ""
+
+	StaticText "$MENU_RESETOPTIONS", "Green"
+	SafeCommand "$MENU_RESETALLOPTIONS", "pipebomb_reset_cvars"
+}
+
+
+// Explosives
+
+OptionMenu "laserTripbombSpawning" {
+	Title "$TAG_LASER_TRIPBOMB"
+
+	StaticText "$MENU_NOTICE", "Brown"
+	StaticText "$MENU_SPAWNRATE_TEXT1", "White"
+	StaticText "$MENU_SPAWNRATE_TEXT2", "White"
+	StaticText ""
+
+	StaticText "$MENU_SPAWNOPTIONS", "Brown"
+	StaticText "$MENU_LASER_TRIPBOMB_SPAWNTEXT", "White"
+	Slider "$MENU_WEPSPAWNRATE", "lasertripbomb_spawn_bias", 0.0, 100, .01, 2
+	SafeCommand "$MENU_RESETWEP", "resetcvar lasertripbomb_spawn_bias"
+	StaticText ""
+
+	StaticText "$MENU_LASER_TRIPBOMB_BACKPACKS", "White"
+	Option "$MENU_BACKPACKSALLOWED", "lasertripbomb_allowBackpacks", "OnOff"
+	StaticText ""
+
+	StaticText "$MENU_PERSISTENCYOPTIONS", "Brown"
+	StaticText "$MENU_PERSISTENCY_TEXT", "White"
+	Option "$MENU_PERSISTENCY", "lasertripbomb_persistent_spawning", "OnOff"
+	SafeCommand "$MENU_RESETPERSISTENCY", "resetcvar lasertripbomb_persistent_spawning"
+	StaticText ""
+	StaticText ""
+
+	StaticText "$MENU_RESETOPTIONS", "Brown"
+	SafeCommand "$MENU_RESETALLOPTIONS", "lasertripbomb_reset_cvars"
+}
+
+OptionMenu "pipebombSpawning" {
+	Title "$TAG_PIPEBOMB"
+
+	StaticText "$MENU_NOTICE", "Brown"
+	StaticText "$MENU_SPAWNRATE_TEXT1", "White"
+	StaticText "$MENU_SPAWNRATE_TEXT2", "White"
+	StaticText ""
+
+	StaticText "$MENU_SPAWNOPTIONS", "Brown"
+	StaticText "$MENU_PIPEBOMB_SPAWNTEXT", "White"
+	Slider "$MENU_WEPSPAWNRATE", "pipebomb_spawn_bias", 0.0, 100, .01, 2
+	SafeCommand "$MENU_RESETWEP", "resetcvar pipebomb_spawn_bias"
+	StaticText ""
+
+	StaticText "$MENU_PIPEBOMB_BACKPACKS", "White"
+	Option "$MENU_BACKPACKSALLOWED", "pipebomb_allowBackpacks", "OnOff"
+	StaticText ""
+
+	StaticText "$MENU_PERSISTENCYOPTIONS", "Brown"
+	StaticText "$MENU_PERSISTENCY_TEXT", "White"
+	Option "$MENU_PERSISTENCY", "pipebomb_persistent_spawning", "OnOff"
+	SafeCommand "$MENU_RESETPERSISTENCY", "resetcvar pipebomb_persistent_spawning"
+	StaticText ""
+	StaticText ""
+
+	StaticText "$MENU_RESETOPTIONS", "Brown"
+	SafeCommand "$MENU_RESETALLOPTIONS", "pipebomb_reset_cvars"
+}
+
+
+// Items
+
+OptionMenu "holoDupeSpawning" {
+	Title "$TAG_HOLODUPE"
+
+	StaticText "$MENU_NOTICE", "Red"
+	StaticText "$MENU_SPAWNRATE_TEXT1", "White"
+	StaticText "$MENU_SPAWNRATE_TEXT2", "White"
+	StaticText ""
+
+	StaticText "$MENU_SPAWNOPTIONS", "Red"
+	StaticText "$MENU_HOLODUPE_SPAWNTEXT", "White"
+	Slider "$MENU_WEPSPAWNRATE", "holodupe_spawn_bias", 0.0, 100, .01, 2
+	SafeCommand "$MENU_RESETWEP", "resetcvar holodupe_spawn_bias"
+	StaticText ""
+
+	StaticText "$MENU_HOLODUPE_BACKPACKS", "White"
+	Option "$MENU_BACKPACKSALLOWED", "holodupe_allowBackpacks", "OnOff"
+	StaticText ""
+
+	StaticText "$MENU_PERSISTENCYOPTIONS", "Red"
+	StaticText "$MENU_PERSISTENCY_TEXT", "White"
+	Option "$MENU_PERSISTENCY", "holodupe_persistent_spawning", "OnOff"
+	SafeCommand "$MENU_RESETPERSISTENCY", "resetcvar holodupe_persistent_spawning"
+	StaticText ""
+	StaticText ""
+
+	StaticText "$MENU_RESETOPTIONS", "Red"
+	SafeCommand "$MENU_RESETALLOPTIONS", "holodupe_reset_cvars"
+}
