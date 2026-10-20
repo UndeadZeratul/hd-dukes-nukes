@@ -517,7 +517,8 @@ class UZRipper : HDWeapon {
                 
                 player.FindPSprite(layer).frame = invoker.isOpen;
                 
-                A_OverlayAlpha(layer, player.FindPSprite(PSP_WEAPON).y < 100);
+                let mainLayer = player.FindPSprite(PSP_WEAPON);
+                A_OverlayAlpha(layer, (mainLayer ? mainLayer.y : 0) < 100);
             }
             loop;
 
@@ -529,7 +530,8 @@ class UZRipper : HDWeapon {
                 
                 player.FindPSprite(layer).frame = (invoker.isOpen * 3) + clamp(heat * 3, 0, 2);
                 
-                A_OverlayAlpha(layer, player.FindPSprite(PSP_WEAPON).y < 100 ? heat : 0);
+                let mainLayer = player.FindPSprite(PSP_WEAPON);
+                A_OverlayAlpha(layer, (mainLayer ? mainLayer.y : 0) < 100 ? heat : 0);
             }
             loop;
 
